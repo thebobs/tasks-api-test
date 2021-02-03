@@ -27,7 +27,7 @@ public class APITest {
 	@Test
 	public void deveAdicionarTarefaComSucesso() {
 		RestAssured.given()
-		.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2021-01-31\"}")
+		.body("{ \"task\": \"Teste via API\", \"dueDate\": \"2021-12-31\"}")
 		.contentType(ContentType.JSON)
 		.when()
 			.post("/todo")
